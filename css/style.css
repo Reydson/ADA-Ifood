@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600&family=Roboto:wght@400;500;600&display=swap');
+
+figure {
+    margin: 0;
+}
+
+body {
+    background: url(../images/fundo.png) repeat-x;
+}
+
+.navbar-topo {
+    background-color: #EA1D2C;
+    border-radius: 20px;
+    margin-top: 80px;
+    padding: 20px 30px
+}
+
+.navbar-topo .nav-link {
+    color: #FFF;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.banner .texto h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 90px;
+}
+
+.banner .texto .cta {
+    background-color: #EA1D2C;
+    color: #FFF;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) {
+    .banner .texto h1 {
+        font-size: 80px;
+    }
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+    .banner .texto h1 {
+        font-size: 65px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+    .banner .texto h1 {
+        font-size: 50px;
+    }
+    .banner .texto .cta {
+        font-size: 23px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    .banner .texto h1 {
+        font-size: 36px;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {}

@@ -113,7 +113,13 @@ html {
 
 .card-comida .preco {
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 600;  
+}
+
+.card-comida .descricao {
+  color: #FFFFFF;
+  font-size: 18px;
+  text-align: center;
 }
 
 .linha-formulario .imagem {

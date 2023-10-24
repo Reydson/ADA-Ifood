@@ -8,6 +8,28 @@ body {
     background: url(../images/fundo.png) repeat-x;
 }
 
+.carousel-control-prev {
+    justify-content: start;
+}
+
+.carousel-control-prev-icon {
+    margin-top: 107px;
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+
+.carousel-control-next {
+    justify-content: end;
+}
+
+.carousel-control-next-icon {
+    margin-top: 107px;
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+
 .navbar-topo {
     background-color: #EA1D2C;
     border-radius: 20px;
@@ -38,6 +60,33 @@ body {
     font-weight: 500;
     border-radius: 10px;
     border: none;
+}
+
+.card-comida {
+    background-color: #EA1D2C;
+    border-radius: 20px;
+    box-shadow: -10px 10px #929386;
+    margin-top: 120px;
+    font-family: 'Palanquin Dark', sans-serif;
+    padding-top: 140px;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.card-comida img {
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+}
+
+.rating .fa-star {
+    color: #FFD600;
+}
+
+.rating .fa-star.branca {
+    color: #FFFFFF;
 }
 
 /* X-Large devices (large desktops, less than 1400px)*/

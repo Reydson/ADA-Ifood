@@ -8,6 +8,10 @@ body {
   background: url(../images/fundo.png) repeat-x;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .carousel-control-prev {
   justify-content: start;
 }

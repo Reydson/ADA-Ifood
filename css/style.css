@@ -89,10 +89,17 @@ body {
     color: #FFFFFF;
 }
 
-body {
-    background-image: linear-gradient(to bottom, #ffe3d7, #d3d3d3);
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
+.linha-formulario .imagem {
+    background: url(https://i.ibb.co/3TJYv32/overhead-view-woman-using-laptop-computer-smart-phone-red-background-with-copy-space-35674-12793.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 30px;
+}
+
+.linha-formulario .fundo {
+    background-color: #f6f8f9;
+    border-radius: 30px;
+}
   
   .contact-form-wrapper {
     padding: 100px 0;
@@ -100,9 +107,7 @@ body {
   
   .contact-form {
     padding: 30px 40px;
-    background-color: #ffffff;
     border-radius: 12px;
-    max-width: 400px;
   }
   
   .contact-form textarea {
@@ -150,9 +155,12 @@ body {
   }
   
   .contact-form .description {
-    color: #aeb4b9;
+    color: #6f7377;
     font-size: 14px;
     text-align: center;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .contact-form .submit-button-wrapper {
@@ -173,7 +181,7 @@ body {
   .contact-form .submit-button-wrapper input:hover {
     background-color: #399c7e;
   }
-  
+
 
 /* X-Large devices (large desktops, less than 1400px)*/
 @media (max-width: 1399.98px) {

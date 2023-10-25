@@ -17,7 +17,7 @@ html {
 }
 
 .carousel-control-prev-icon {
-  margin-top: 107px;
+  margin-top: 60%;
   height: 50px;
   width: 50px;
   display: block;
@@ -28,16 +28,20 @@ html {
 }
 
 .carousel-control-next-icon {
-  margin-top: 107px;
+  margin-top: 60%;
   height: 50px;
   width: 50px;
   display: block;
 }
 
+.titulo {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 40px;
+}
+
 .navbar-topo {
   background-color: #EA1D2C;
   border-radius: 20px;
-  margin-top: 80px;
   padding: 20px 30px
 }
 
@@ -50,13 +54,19 @@ html {
   padding-right: 15px;
 }
 
+.navbar-topo .nav-link:hover {
+  text-decoration: underline;
+}
+
 .banner .texto h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 90px;
+  line-height: 1;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.banner .texto .cta {
+.cta {
   background-color: #EA1D2C;
   color: #FFF;
   font-family: 'Palanquin Dark', sans-serif;
@@ -64,17 +74,34 @@ html {
   font-weight: 500;
   border-radius: 10px;
   border: none;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: #399c7e;
+  transform: scale(1.01);
+}
+
+.cupons {
+  margin-top: -10px;
 }
 
 .card-comida {
   background-color: #EA1D2C;
   border-radius: 20px;
   box-shadow: -10px 10px #929386;
-  margin-top: 160px;
+  margin-top: 80px;
+  margin-bottom: 90px;
   font-family: 'Palanquin Dark', sans-serif;
   padding-top: 170px;
   padding-bottom: 60px;
   position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card-comida:hover {
+  box-shadow: -10px 10px #399C7E;
 }
 
 .card-comida img {
@@ -91,12 +118,23 @@ html {
   background: url(../images/carrinho.png) no-repeat;
   position: absolute;
   bottom: -30px;
+  background-color: #929386;
+  border-radius: 50%;
+  background-position: center center;
+}
+
+.card-comida:hover::after {
+  background-color: #399C7E;
 }
 
 .card-comida figcaption {
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 5px;
+}
+
+.card-comida:hover figcaption {
+  color: #000;
 }
 
 .card-comida .rating {
@@ -120,6 +158,10 @@ html {
   color: #FFFFFF;
   font-size: 18px;
   text-align: center;
+}
+
+.linha-formulario {
+  margin-top: 40px
 }
 
 .linha-formulario .imagem {
@@ -234,6 +276,32 @@ html {
   text-decoration: none;
 }
 
+.footer .contatos .telefone::before {
+  content: ' ';
+  height: 45px;
+  width: 45px;
+  background: url(../images/phone.png) no-repeat;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer .contatos .email::before {
+  content: ' ';
+  height: 45px;
+  width: 45px;
+  background: url(../images/email.png) no-repeat;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer .contatos .linkedin::before {
+  content: ' ';
+  height: 45px;
+  width: 45px;
+  background: url(../images/linkedIn.png) no-repeat;
+  display: inline-block;
+  margin-right: 10px;
+}
 /* X-Large devices (large desktops, less than 1400px)*/
 @media (max-width: 1399.98px) {
   .banner .texto h1 {

@@ -11,7 +11,7 @@
   <body>
     <header>
       <div class="container">
-        <nav class="navbar-topo">
+        <nav class="navbar-topo mt-2 mt-md-5">
           <div class="row">
             <div class="col-md-3 d-flex justify-content-center justify-content-md-start">
               <a href="#">
@@ -40,20 +40,21 @@
     <main>
       <div class="container" id="home">
         <section class="row banner">
-          <div class="col-7 texto d-flex flex-column align-items-start justify-content-center">
-            <h1>Os melhores pratos estão aqui</h1>
-            <a href="#">
+          <div class="col-1 d-none d-lg-block"></div>
+          <div class="col-7 col-lg-6 texto d-flex flex-column align-items-start justify-content-center">
+            <h1>Um novo site, os mesmos sabores </h1>
+            <a href="#mais-pedidos">
               <button class="cta py-2 px-3 px-lg-5 mt-md-2">Confira os mais pedidos</button>
             </a>
           </div>
-          <div class="col-5 d-flex justify-content-center my-2">
+          <div class="col-5 col-lg-4 d-flex justify-content-center my-2">
             <figure>
               <img class="w-100" src="images/hamburguer.png" alt="Hambúrguer delicioso">
             </figure>
           </div>
         </section>
 
-        <section class="row">
+        <section class="row cupons">
           <div class="col-1 d-none d-lg-block"></div>
           <div class="col-12 col-lg-10">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -81,10 +82,10 @@
           </div>
         </section>
 
-        
-        <section class="row my-5" id="mais-pedidos">
+        <section class="row" id="mais-pedidos">
           <div class="col-1 d-none d-lg-block"></div>
           <div class="col-12 col-lg-10">
+            <h2 class="text-center mt-5 titulo">Mais pedidos</h2>
             <div class="row">
               <div class="col-12 col-sm-6 col-md-4">
                 <article class="card-comida d-flex flex-column align-items-center mx-4 mx-sm-0">
@@ -117,7 +118,7 @@
                     <i class="fas fa-star branca"></i>
                   </div>
                   <span class="preco">R$: 10,00</span>
-                  <span class="descricao">Saboreie a perfeição com nossos hambúrgueres suculentos. Cada mordida é uma explosão de sabor, a receita secreta que você vai adorar desvendar.</span>
+                  <span class="descricao">Saboreie nossos hambúrgueres suculentos.</span>
                 </article>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
@@ -134,7 +135,7 @@
                     <i class="fas fa-star branca"></i>
                   </div>
                   <span class="preco">R$: 10,00</span>
-                  <span class="descricao">4 queijos, Calabresa, Portuguesa</span>
+                  <span class="descricao">Saboreie a felicidade em forma redonda com nossas pizzas.</span>
                 </article>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
@@ -151,7 +152,7 @@
                     <i class="fas fa-star branca"></i>
                   </div>
                   <span class="preco">R$: 10,00</span>
-                  <span class="descricao"> Quinoa, Tofu frito, Chili vegano</span>
+                  <span class="descricao">Uma explosão de sabores naturais que fará você se apaixonar.</span>
                 </article>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
@@ -168,7 +169,7 @@
                     <i class="fas fa-star branca"></i>
                   </div>
                   <span class="preco">R$: 10,00</span>
-                  <span class="descricao">Pork ribs, Costela, Tradicional</span>
+                  <span class="descricao">Deleite-se com a autenticidade do sabor do churrasco.</span>
                 </article>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
@@ -185,21 +186,21 @@
                     <i class="fas fa-star branca"></i>
                   </div>
                   <span class="preco">R$: 10,00</span>
-                  <span class="descricao">Refrigerante, Vinhos, Cervejas</span>
+                  <span class="descricao">Refresque-se e saboreie a vida com as nossas bebidas irresistíveis.</span>
                 </article>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="row my-5 linha-formulario" id="sugestoes">
+        <section class="row linha-formulario" id="sugestoes">
           <div class="col-1 col-md-2 col-lg-1 d-none d-md-block"></div>
           <div class="col-12 col-md-8 col-lg-10 fundo">
             <div class="row">
               <div class="col-6 d-none d-lg-block imagem"></div>
               <div class="col-12 col-lg-6 formulario">
                 <form action="#" class="contact-form">
-                  <h5 class="title">Nos contate</h5>
+                  <h5 class="title">Sugestões</h5>
                   <p class="description">Fique à vontade para nos contatar: dúvidas, suporte ou receber suas valiosas sugestões.
                   </p>
                   <p class="description">Preencha seu email e mensagem abaixo, e entraremos em contato em breve.</p>
@@ -213,7 +214,7 @@
                     <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" placeholder="Mensagem" required></textarea>
                   </div>
                   <div class="submit-button-wrapper">
-                    <input type="submit" value="Enviar">
+                    <button class="cta px-5" type="submit">Enviar</button>
                   </div>
                 </form>
               </div>
@@ -223,15 +224,14 @@
       </div>
     </main>
     <footer>
-      <div class="container mb-5">
+      <div class="container mb-2 mb-md-5 text-white">
         <div class="footer d-flex justify-content-between align-items-center flex-column flex-lg-row">
           <div class="d-flex align-items-center mb-4 mb-lg-0">
-            <figure>
-              <img src="images/linkedIn.png" alt="Logo do LinkedIn" class="me-2">
-            </figure>
-            <span>
-              Desenvolvido por: <a href="https://www.linkedin.com/in/ednirli-miro-188b1513a/" target="_blank">Emily Miro</a>, <a href="https://www.linkedin.com/in/igor-benez-52671a236/" target="_blank">Igor Benez</a>, <a href="https://www.linkedin.com/in/reydson-barros-19532b96/" target="_blank">Reydson Barros</a> e <a href="https://www.linkedin.com/in/dev-rod-santos/" target="_blank">Rodrigo Santos</a>.
-            </span>
+            <div class="contatos">
+              <span class="telefone d-flex align-items-center">(99) 99999-9999</span>
+              <span class="email d-flex align-items-center">contato@ifood.com.br</span>
+              <span class="linkedin d-flex align-items-center"><span>Desenvolvido por: <a href="https://www.linkedin.com/in/ednirli-miro-188b1513a/" target="_blank">Emily Miro</a>, <a href="https://www.linkedin.com/in/igor-benez-52671a236/" target="_blank">Igor Benez</a>, <a href="https://www.linkedin.com/in/reydson-barros-19532b96/" target="_blank">Reydson Barros</a> e <a href="https://www.linkedin.com/in/dev-rod-santos/" target="_blank">Rodrigo Santos</a>.</span></span>  
+            </div>
           </div>
           <figure>
             <img src="images/logo-header.webp" alt="Logo do Ifood">
